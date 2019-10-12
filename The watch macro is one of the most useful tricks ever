@@ -1,0 +1,2 @@
+#define watch(x) cout << (#x) << " is " << (x) << endl
+If you’re debugging your code, watch(variable); will print the name of the variable and its value. (It’s possible because it’s build in preprocessing time.)
