@@ -1,0 +1,1 @@
+There’s an inbuilt function to evaluate the greatest common divisor of two numbers. It’s called __gcd() and it’s present in the algorithm header file. 
