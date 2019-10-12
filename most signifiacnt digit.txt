@@ -1,0 +1,4 @@
+n = 4578;
+double k = log10(n);
+k = k – floor(k);
+int x = pow(10, k); //x is the most significant digi
