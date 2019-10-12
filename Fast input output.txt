@@ -3,7 +3,7 @@ we add two extra lines in our cpp code to make it fast
 
 int main()
 {
-// two lines are:
+// two lines are given as:
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 }
