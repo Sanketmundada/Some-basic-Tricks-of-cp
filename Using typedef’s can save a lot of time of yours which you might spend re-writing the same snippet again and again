@@ -1,0 +1,5 @@
+typedef long long ll;
+typedef pair w;
+typedef vector va;
+typedef vector vb;
+typedef vector vc;
