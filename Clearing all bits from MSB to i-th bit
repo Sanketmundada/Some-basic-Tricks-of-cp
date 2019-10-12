@@ -1,0 +1,9 @@
+mask = (1 << i) - 1;
+x &= mask;
+Logic: To clear all bits from MSB to i-th bit, we have to AND x with mask having MSB to i-th bit 0. To obtain such mask, first left shift 1 i times. Now if we minus 1 from that, all the bits from 0 to i-1 become 1 and remaining bits become 0.
+Example-
+x = 215 (11010111) and we want to clear MSB to 4th bit, total 4 bits
+mask -> 1 << 4 -> 16(00010000)
+mask -> 16 – 1 -> 15(00001111)
+x & mask -> 7(00000111)
+
