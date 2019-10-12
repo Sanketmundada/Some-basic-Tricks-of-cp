@@ -1,0 +1,7 @@
+When a variable is defined as auto, compiler can determing the datatype on its own.
+Example:
+
+auto a = 100; // a will become 'int'
+auto b = 1LL; // b will become 'long long'
+auto c = 1.0; // c will become 'double'
+auto d = "variable"; // d will become 'string'
