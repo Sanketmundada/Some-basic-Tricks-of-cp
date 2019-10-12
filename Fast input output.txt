@@ -1,9 +1,9 @@
-we add two extra lines in our cpp code to make it fast
+//we add two extra lines in our cpp code to make it fast
 
 
 int main()
 {
-// two lines are given as:
+// two lines are written as:
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 }
