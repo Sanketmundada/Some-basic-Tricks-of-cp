@@ -1,0 +1,4 @@
+int arr[5] = {0};
+char str[5] = {0};
+itoa(arr, arr+5, 15); //it will generate {15, 16, 17, 18, 19}
+itoa(str, str+5, ‘A’); //it will generate {‘A’, ‘B’, ‘C’, ‘D’, ‘E’}

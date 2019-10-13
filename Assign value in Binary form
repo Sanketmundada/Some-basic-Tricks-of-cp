@@ -1,0 +1,1 @@
+int x = 0b1101; //then x will hold 13

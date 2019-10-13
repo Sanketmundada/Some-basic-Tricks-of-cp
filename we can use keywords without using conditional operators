@@ -1,0 +1,6 @@
+x = 10;
+if(x < 10 and x > 5)
+   cout << “True” << endl;
+else
+   cout << “False” << endl;
+   //This will return True

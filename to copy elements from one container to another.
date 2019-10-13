@@ -1,0 +1,3 @@
+int src[5] = {10, 20, 30, 40, 50};
+int des[5];
+copy_n(src, 5, dest);
