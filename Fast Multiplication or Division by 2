@@ -1,0 +1,2 @@
+n = n << 1; // Multiply n with 2 
+n = n >> 1; // Divide n by 2 
