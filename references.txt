@@ -1,0 +1,12 @@
+    struct node
+    {
+        int x,sum,sqr;
+    }tree[N];
+    int main()
+    {
+        for(i=1;i<N;i++)
+        {
+            tree[i].sum=tree[i-1].sum+tree[i].x;
+            tree[i].sqr=tree[i].sum*tree[i].sum;
+        }
+    }
