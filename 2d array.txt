@@ -1,0 +1,24 @@
+    void dfs(int x,int y)
+    {
+        //note we have to write same thing written in code 4 times!
+        if(valid(x-1,y))
+        {
+            //code
+            dfs(x-1,y);
+        }
+        if(valid(x+1,y))
+        {
+            //code
+            dfs(x+1,y);
+        }
+        if(valid(x,y-1))
+        {
+            //code
+            dfs(x,y-1);
+        }
+        if(valid(x,y+1))
+        {
+            //code
+            dfs(x,y+1);
+        }
+    }
