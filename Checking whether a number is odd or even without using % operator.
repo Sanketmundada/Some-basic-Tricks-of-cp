@@ -1,5 +1,0 @@
-if ((n & 1) != 0){
-   //this is odd
-} else {
-   //This is even
-}
