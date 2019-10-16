@@ -1,0 +1,6 @@
+x = 40;
+y = x << 2; //x will be multiplied with 4, so y = 160
+cout << x;
+x = 40;
+y = x >> 2; //x will be divided by 4, so y = 10
+cout << x;
