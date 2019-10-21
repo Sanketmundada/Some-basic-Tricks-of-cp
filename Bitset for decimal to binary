@@ -1,0 +1,24 @@
+
+//this program gives binary representation of inputed number using bitset
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int num,i;
+    cin >> num;
+    bitset <64> bin(num); //this makes bool array of 64 bits and stores binary representation of num in it (LSB on 0th index)
+    //printing the binary representation
+
+    for(i = 63 ; i >= 0 ; i--) //for finding MSB's position
+    {
+      if( bin[i] )
+        break;
+    }
+
+    for( ; i >= 0 ; i--)
+      cout << bin[i];
+    cout << endl;
+    return 0;
+}
