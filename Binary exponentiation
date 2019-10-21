@@ -1,0 +1,25 @@
+//this program calculates (x raised to y)mod p in O(logy) time which is faster than conventional y times multiplication of x
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int bin_expo(int x, int y, int p) //function to calculate (x ^ y) % p
+{
+	int res=1;
+	while(y)
+	{
+		if(y % 2) //if y is odd
+			res = ((res % p) * (x % p)) % p;
+		x = ((x % p) * (x % p)) % p;
+		y /= 2;
+	}
+	return res;
+}
+
+int main()
+{
+	int num, power, mod, i;
+	cin >> num >> power >> mod;
+	cout << bin_expo(num, power, mod) << endl;
+	return 0;
+}
