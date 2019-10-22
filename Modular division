@@ -1,0 +1,38 @@
+//this program is helpful for calculating (p/q)%mod using modulo inverse
+//Using fermat's little theorem
+/*
+	(p/q) % mod = (p*(q^-1)) % mod
+				= ((p % mod) * (q^-1 % mod)) % mod
+	where q^-1 % mod = q^(mod-2) % mod
+*/
+#include <bits/stdc++.h>
+using namespace std;
+
+long long int bin_expo(long long int x, long long int y, long long int p) //function to calculate (x^y)%p
+{
+	long long int res=1;
+	while(y)
+	{
+		if(y % 2) //if y is odd
+			res = ((res % p) * (x % p)) % p;
+		x = ((x % p) * (x % p)) % p;
+		y /= 2;
+	}
+	return res;
+}
+
+long long int PbyQ(long long int p, long long int q, long long int mod)
+{
+	long long int res=1;
+	res = ((p % mod) * (bin_expo(q, mod - 2, mod) % mod)) % mod;
+	return res;
+}
+
+int main()
+{
+	long long int p, q, mod, ans;
+	cin >> p >> q >> mod;
+	ans = PbyQ(p, q, mod);
+	cout << ans << endl;
+	return 0;
+}
