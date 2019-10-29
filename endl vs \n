@@ -1,0 +1,27 @@
+
+endl vs \n in C++
+
+Although they both seem to do the same thing, there is a subtle difference between them.
+
+cout << endl  : Inserts a new line and flushes the stream
+
+cout << "\n"  : Only inserts a new line.
+
+Therefore,
+
+cout << endl;
+
+
+can be said equivalent to
+
+cout << ‘\n’ << flush;
+
+So cout << “\n” seems performance wise better than cout << endl; unless flushing of stream is required.
+
+Some other differences between endl and \n are:
+
+    endl is manipulator while \n is character.
+    endl doesn’t occupy any memory whereas \n is character so It occupy 1 byte memory.
+    We cannot write endl in between double quotation while we can write \n in between double quotation like
+    cout<<"\n"; it is right but cout<<"endl"; is wrong.
+    We can use \n also in C++ but we can't use endl in C language.
